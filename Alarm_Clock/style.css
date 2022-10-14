@@ -1,0 +1,64 @@
+body{
+    background-color: purple;
+    font-family: cursive;
+    min-height: 80vh;
+}
+body, .container, .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body h2{
+    font-size: 50px;
+    color: rgb(87, 5, 87);
+}
+.container{
+    width: 450px;
+    background: gold;
+    border-radius: 10px;
+    padding: 30px 30px;
+    flex-direction: column;
+}
+.container h1{
+    font-size: 40px;
+    font-weight: 600;
+    margin: 25px 0;
+    /* margin-top: 10px; */
+}
+.container .content{
+    width: 100%;
+    justify-content: space-between;
+}
+.container .content.disable{
+    opacity: 0.6;
+    pointer-events: none;
+}
+.content .column{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0 10px;
+    width: calc(100% / 4 - 5px);
+}
+.column select{
+    outline: none;
+    border: none;
+    height: 35px;
+    background-color: gold;
+    width: 100%;
+    font-size: 15px;
+    font-family: cursive;
+}
+button{
+    width: 100%;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    font-size: 20px;
+    padding: 17px 0;
+    border-radius: 5px;
+    background-color: purple;
+    font-weight: 600;
+    font-family: cursive;
+    color: gold;
+    cursor: pointer;
+}
